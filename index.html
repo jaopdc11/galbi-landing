@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="img/saturn.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .buttonBd {
+            padding: 10px 40px;
+            font-size: 20px;
+        }
+        .font-parabens {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(58, 58, 58, 0.8);
+            border-radius: 10px;
+            border: 2px solid rgba(77, 77, 77, 0.5);
+        }
+
+        ::-webkit-scrollbar-thumb:active {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(32, 32, 32, 0.9);
+        }
+    </style>
+    <title>Ricardo Galbi | O mais brabo de todos</title>
+</head>
+
+<body class="bg-gray-900 text-gray-100 flex flex-col items-center min-h-screen">
+
+    <header class="bg-gray-800 shadow-md w-full fixed top-0 left-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html"><img src="img/galbi-logo.svg" alt="galbi-logo" class="h-16"></a>
+            <button id="menu-button" class="text-gray-300 hover:text-blue-400 lg:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <nav id="menu" class="space-x-4 hidden lg:flex">
+                <a href="#about" class="text-gray-300 hover:text-blue-400">Sobre Mim</a>
+                <a href="#style" class="text-gray-300 hover:text-blue-400">Estilo</a>
+                <a href="#amor" class="text-gray-300 hover:text-blue-400">Amor</a>
+                <a href="#nerd" class="text-gray-300 hover:text-blue-400">Para Nerds!</a>
+                <a href="#parabens" class="text-gray-300 hover:text-blue-400">Parabéns!</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="lg:hidden hidden">
+            <nav class="space-y-4 p-4">
+                <a href="#about" class="block text-gray-300 hover:text-blue-400">Sobre Mim</a>
+                <a href="#style" class="block text-gray-300 hover:text-blue-400">Estilo</a>
+                <a href="#amor" class="block text-gray-300 hover:text-blue-400">Amor</a>
+                <a href="#nerd" class="block text-gray-300 hover:text-blue-400">Para Nerds!</a>
+                <a href="#parabens" class="block text-gray-300 hover:text-blue-400">Parabéns!</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto my-8 px-4">
+        <section id="about" class="mb-16">
+            <h1 class="text-3xl font-bold mb-6 text-center text-gray-100">Quem sou eu?</h1>
+            <div id="eu" class="justify-center text-center bg-gray-800 shadow-lg p-6 rounded-lg flex items-center flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8">
+                <img style="cursor: pointer;" id="galbiButton" draggable="false" src="/img/galbi.jpg" alt="galbi" class="h-44 w-44 rounded-full">
+                <p class="text-gray-300 leading-relaxed p-4 border border-gray-700 rounded-lg max-w-sm" draggable="false">
+                    Sou Ricardo Galbi, professor formado em física, entusiasta de programação, último romântico da Terra (te amo, Ana) e o melhor e mais estiloso professor do CSJ (do Brasil também, mas sejamos modestos).
+                </p>
+            </div>
+        </section>
+
+        <section id="style" class="mb-8">
+            <h1 class="text-3xl font-bold mb-6 text-center text-gray-100">Estilo Imbatível.</h1>
+            <div id="fotos-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <img draggable="false" src="img/galbi1.png" alt="galbi1" class="w-full rounded-lg">
+                <img draggable="false" src="img/galbi2.png" alt="galbi2" class="w-full rounded-lg">
+                <img draggable="false" src="img/galbi3.png" alt="galbi3" class="w-full rounded-lg">
+                <img draggable="false" src="img/galbi4.png" alt="galbi4" class="w-full rounded-lg">
+                <img draggable="false" src="img/galbi5.png" alt="galbi5" class="w-full rounded-lg">
+                <img draggable="false" src="img/galbi6.png" alt="galbi6" class="w-full rounded-lg">
+                <img draggable="false" src="img/galbi7.png" alt="galbi7" class="w-full rounded-lg">
+                <img draggable="false" src="img/galbi8.png" alt="galbi8" class="w-full rounded-lg">
+            </div>
+        </section>
+
+        <section id="amor" class="flex flex-col items-center justify-center">
+            <h1 class="text-3xl font-bold mb-6 text-center text-gray-100">Amor Que Transforma.</h1>
+            <div id="fotos-grid" class="flex flex-wrap justify-center gap-6">
+                <img draggable="false" src="img/amor1.png" alt="amor1" class="w-60 rounded-lg">
+                <img draggable="false" src="img/amor2.png" alt="amor2" class="w-60 rounded-lg">
+            </div>
+        </section>
+        
+        <section id="nerd">
+            <h1 class="text-3xl font-bold mt-10 text-center text-gray-100">Para Nerds!</h1>
+            <div id="piadas" class="my-12">
+                <h1 class="text-3xl font-bold mb-4 text-center text-gray-100">Piadas de Física</h1>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <p class="text-gray-300 mb-4">Por que os físicos nunca ficam no escuro?</p>
+                    <p class="text-gray-300 mb-4"><em>- Porque eles sempre têm uma solução!</em></p>
+                    <p class="text-gray-300 mb-4">O que um físico disse quando estava com preguiça?</p>
+                    <p class="text-gray-300 mb-4"><em>- “Estou em uma fase de repouso!”</em></p>
+                </div>
+            </div>
+            
+            <section id="felicidade" class="my-12">
+                <h1 class="text-3xl font-bold mb-6 text-center text-gray-100">Cálculo da Felicidade</h1>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                    <p class="text-gray-300 mb-4">
+                        Vamos calcular a felicidade (F) do Galbi:
+                    </p>
+                    <p class="text-gray-300 mb-4">
+                        \[ F =  \int_{0}^{\infty} \frac{T}{J + 1} \, dT \]
+                    </p>
+                    <p class="text-gray-300 mb-4">
+                        Onde:
+                    </p>
+                    <p class="text-gray-300 mb-4">
+                        T é o tempo com a Ana (quanto mais, mais feliz),
+                    </p>
+                    <p class="text-gray-300 mb-4">
+                        J é o tempo programando em Java (quanto menos, melhor).
+                    </p>
+                    <p class="text-gray-300 mb-4">
+                        Portanto, <span id="mathjax-equation">\[
+                        \text{F} \to \infty \text{ quando } T \to \infty \text{ e } J \to 0
+                        \]</span>
+                    </p>
+                </div>
+            </section>   
+            
+            <section id="parabens">
+                <h1 class="text-3xl font-bold mb-6 text-center text-gray-100">Parabéns!</h1>
+                <p class="text-gray-300 leading-relaxed mb-4 font-parabens">
+                    "Galbi, chegou o grande dia! 🎉 É o dia de celebrar o cara mais brabo que eu conheço. Que sua jornada seja sempre repleta de sucesso, estilo, amor e aquele bom humor que só você tem!
+                    Continue sendo esse mestre da física, o rei da programação e, claro, um romântico incurável. Que cada novo dia traga mais conquistas e risadas. E que Ana siga sendo sua constante de felicidade, como a fórmula já prova! 😎
+                    Feliz aniversário, Galbi! Que essa nova fase seja cheia de energia positiva, projetos incríveis e momentos épicos. Tamo junto, professor! 🚀"
+                    - João
+                </p>
+                <p class="text-gray-300 leading-relaxed font-parabens">
+                    "É um dia especial, e não poderia deixar de expressar o quanto sou grato por ter o senhor como meu professor. Suas aulas sempre são inspiradoras e mostram o quanto você se dedica à nossa formação. Além de transmitir conhecimento, você nos ensina a pensar de forma crítica e a acreditar em nosso potencial.
+                    Que seu aniversário seja repleto de alegria, saúde e de momentos inesquecíveis ao lado de quem você ama. Que essa nova etapa seja tão brilhante quanto a luz que você traz para nossas vidas. Muitas felicidades e tudo de bom!" 
+                    - Andreas
+                </p>
+            </section>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 py-4 mt-auto w-full text-center">
+        <p class="text-gray-400">&copy; 2024 Ricardo Galbi. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
